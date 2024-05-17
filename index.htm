@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>وبسایت شیپور</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-6-0-0.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body dir="rtl">
+	
+	<!-- Top Navbar -->
+	<nav id="top-nav">
+		<div class="container">
+			<div class="flex-row">
+				<!-- Menu -->
+				<div class="col">
+					<!-- Menu Tablet -->
+					<ul class="menu clearfix d-none d-tab-block">
+						<li><a href="#">همه آگهی ها</a></li>
+						<li><a href="#">همه فروشگاه ها</a></li>
+						<li><a href="#">همه مشاوران</a></li>
+						<li>
+							<a href="#">پشتیبانی</a>
+							<ul class="menu-child">
+								<li><a href="#">راهنما و پشتیبانی</a></li>
+								<li><a href="#">تماس با پشتیبانی</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Mobile Menu Icon -->
+					<a href="#mobile-menu" class="mobile-menu-icon d-inline-block d-tab-none">
+						<i class="fa-solid fa-bars-sort"></i>
+					</a>
+				</div>
+				<!-- Chat -->
+				<div class="col-auto">
+					<a href="#" class="chat">
+						<span>چت‌ های من</span>
+						<i class="fa-solid fa-messages"></i>
+					</a>
+				</div>
+				<!-- My Account -->
+				<div class="col-auto">
+					<div class="login">
+						<!-- My Account Btn -->
+						<a href="#" class="my-account">
+							<span>حساب من</span>
+							<i class="fa-solid fa-circle-user"></i>
+						</a>
+						<!-- Account menu -->
+						<div class="account-menu">
+							<a href="#">ورود / ثبت نام</a>
+							<a href="#">پسندیده ها</a>
+							<a href="#">آگهی های من</a>
+							<a href="#">جستجو های من</a>
+							<a href="#">چت های من</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="container">
+			<div class="flex-row justify-content-between align-items-center">
+				<!-- Logo -->
+				<div class="col-auto">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="شیپور" class="image-responsive">
+					</a>
+				</div>
+				<!-- ADS Registration -->
+				<div class="col-auto">
+					<a href="#" class="ads-registration">
+						<i class="fa-solid fa-plus"></i>
+						<span>ثبت آگهی رایگان</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mobile Menu -->
+	<section id="mobile-menu">
+		<div class="wrapper">
+			<a href="#" class="close-mobile-menu">
+				<i class="fa-solid fa-xmark"></i>
+			</a>
+			<ul class="menu">
+				<li><a href="#">همه آگهی ها</a></li>
+				<li><a href="#">همه فروشگاه ها</a></li>
+				<li><a href="#">همه مشاوران</a></li>
+				<li>
+					<a href="#">پشتیبانی</a>
+					<ul class="menu-child">
+						<li><a href="#">راهنما و پشتبانی</a></li>
+						<li><a href="#">تماس با پشتیبانی</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Site name & Description -->
+	<section id="site-name">
+		<div class="container">
+			<h1>نیازمندیهای رایگان شیپور</h1>
+			<p><strong>خرید و فروش خودرو، املاک، آپارتمان، گوشی موبایل، تبلت، لوازم خانگی، لوازم دست دوم، استخدام و هر چه فکر کنید!</strong></p>
+		</div>
+	</section>
+
+	<!-- Search -->
+	<section id="search">
+		<div class="container">
+			<div class="form-wrapper box-style">
+				<form action="" method="">
+					<div class="flex-row">
+						<!-- Text -->
+						<div class="col-12 col-tab">
+							<input type="text" placeholder="جستجو ..." name="query-text" class="search-field">
+						</div>
+						<!-- Category -->
+						<div class="col-12 col-tab-3">
+							<select name="query-category" class="search-field">
+								<option>همه گروه ها</option>
+								<option>وسیله نقلیه</option>
+								<option>املاک</option>
+								<option>استخدام</option>
+								<option>کسب و کار</option>
+							</select>
+						</div>
+						<!-- Place -->
+						<div class="col-12 col-tab-3">
+							<select name="query-place" class="search-field">
+								<option>همه ایران</option>
+								<option>تهران</option>
+								<option>مازندران</option>
+								<option>گیلان</option>
+								<option>گلستان</option>
+							</select>
+						</div>
+						<!-- Button -->
+						<div class="col-12 col-tab-auto">
+							<button type="submit" class="search-btn">
+								<i class="fa-regular fa-magnifying-glass"></i>
+								<span>جستجو</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Category -->
+	<section id="category">
+		<div class="container">
+			<!-- Open Category -->
+			<div class="open-category flex-row row-padding">
+				<div class="col-12 col-tab-6 col-desk-3">
+					<div class="box-style open-cat-item">
+						<header class="flex-row">
+							<div class="col-auto align-self-center">
+								<i class="fa-solid fa-car" style="color: #FE5576;"></i>
+							</div>
+							<div class="col">
+								<span class="name">وسایل نقلیه</span>
+								<span class="ads-number">(199,844)</span>
+							</div>
+							<div class="col-auto">
+								<a href="#" class="more">نمایش همه</a>
+							</div>
+						</header>
+						<div class="entry">
+							<a href="#">خودرو</a>
+							<a href="#">موتور سیکلت</a>
+							<a href="#">خودرو کلاسیک</a>
+							<a href="#">سنگین و نیمه سنگین</a>
+							<a href="#">کشاورزی و عمرانی</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-tab-6 col-desk-3">
+					<div class="box-style open-cat-item">
+						<header class="flex-row">
+							<div class="col-auto align-self-center">
+								<i class="fa-solid fa-buildings" style="color: #008C99;"></i>
+							</div>
+							<div class="col">
+								<span class="name">املاک</span>
+								<span class="ads-number">(467,189)</span>
+							</div>
+							<div class="col-auto">
+								<a href="#" class="more">نمایش همه</a>
+							</div>
+						</header>
+						<div class="entry">
+							<a href="#">رهنم و اجاره خانه و آپارتمان</a>
+							<a href="#">خرید و فروش خانه و آپارتمان</a>
+							<a href="#">اجاره کوتاه مدت ویلا و سوئیت</a>
+							<a href="#">رهن و اجاره اداری، تجاری و صنعتی</a>
+							<a href="#">خرید و فروش اداری، تجاری و صنعتی</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-tab-6 col-desk-3">
+					<div class="box-style open-cat-item">
+						<header class="flex-row">
+							<div class="col-auto align-self-center">
+								<i class="fa-solid fa-briefcase" style="color: #0060FF;"></i>
+							</div>
+							<div class="col">
+								<span class="name">استخدام</span>
+								<span class="ads-number">(45,431)</span>
+							</div>
+							<div class="col-auto">
+								<a href="#" class="more">نمایش همه</a>
+							</div>
+						</header>
+						<div class="entry">
+							<a href="#">آرایشگر | اپیلاسیون کار</a>
+							<a href="#">آشپر و مشاغل مرتبط</a>
+							<a href="#">انباردار</a>
+							<a href="#">بازاریاب | ویزیتور</a>
+							<a href="#">برنامه نویس | کارشناس شبکه</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-tab-6 col-desk-3">
+					<div class="box-style open-cat-item">
+						<header class="flex-row">
+							<div class="col-auto align-self-center">
+								<i class="fa-solid fa-wrench" style="color: #FFC000;"></i>
+							</div>
+							<div class="col">
+								<span class="name">خدمات و کسب و کار</span>
+								<span class="ads-number">(104,706)</span>
+							</div>
+							<div class="col-auto">
+								<a href="#" class="more">نمایش همه</a>
+							</div>
+						</header>
+						<div class="entry">
+							<a href="#">آرایشگری و زیبایی</a>
+							<a href="#">آموزش</a>
+							<a href="#">اجاره لوازم</a>
+							<a href="#">اسباب کشی و حمل و نقل</a>
+							<a href="#">اینترنت، رایانه و موبایل</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Close Category -->
+			<div class="close-category flex-row row-padding">
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-couch" style="color: #D9A400;"></i>
+						<span class="name">لوازم خانگی</span>
+						<span class="ads-number">(124,280)</span>
+					</div>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-umbrella-beach" style="color: #ffa056;"></i>
+						<span class="name">ورزش فرهنگ فراغت</span>
+						<span class="ads-number">(99,714)</span>
+					</div>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-laptop" style="color: #4ca9ff;"></i>
+						<span class="name">لوازم الکترونیکی</span>
+						<span class="ads-number">(41,932)</span>
+					</div>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-handshake-simple" style="color: #911265;"></i>
+						<span class="name">صنعتی، اداری و تجاری</span>
+						<span class="ads-number">(72,986)</span>
+					</div>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-mobile-screen-button" style="color: #0059d9;"></i>
+						<span class="name">موبایل، تبلت و لوازم</span>
+						<span class="ads-number">(35,526)</span>
+					</div>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-2">
+					<div class="box-style close-cat-item">
+						<i class="fa-solid fa-face-smile-wink" style="color: #ff89a0;"></i>
+						<span class="name">لوازم شخصی</span>
+						<span class="ads-number">(58,447)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Safe Shopping -->
+	<section id="safe-shopping">
+		<div class="container">
+			<div class="wrapper">
+				<div class="custom-col align-self-end">
+					<header>
+						<i class="fa-solid fa-shield-check"></i>
+						<h3>خرید امن</h3>
+						<p>مبلغ پرداختی شما به امانت نزد شیپور می‌ماند تا کالا برایتان ارسال ‌شود، پس از دریافت کالا با تاییدِ شما مبلغ را به فروشنده منتقل می‌کنیم.</p>
+						<a href="#">نمایش همه</a>
+					</header>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="custom-col">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="safe-label">
+								<i class="fa-solid fa-shield-check"></i>
+								<span>خرید امن</span>
+							</div>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Latest ADS -->
+	<section id="latest-ads">
+		<div class="container">
+			<h3>جدیدترین آگهی ها</h3>
+			<div class="flex-row row-padding">
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>تهران، شهرک غرب</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>کرج، عظیمیه</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>تهران، شهرک غرب</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>کرج، عظیمیه</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>تهران، شهرک غرب</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>کرج، عظیمیه</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads1.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>ساعت هوشمند طرح اپل</h5>
+							<div class="price">
+								<span class="amount">1,190,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>تهران، شهرک غرب</address>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-tab-4 col-desk-3">
+					<a href="#">
+						<div class="box-style ads-item">
+							<div class="thumb">
+								<img src="img/ads2.jpg" alt="تصویر آگهی" class="image-responsive">
+							</div>
+							<h5>گوشی نوکیا ساده مدل 130 ویتنام و دوسیم کارت</h5>
+							<div class="price">
+								<span class="amount">395,000</span>
+								<span class="currency">تومان</span>
+							</div>
+							<address>کرج، عظیمیه</address>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="more">
+				<a href="#">نمایش همه آگهی‌ها</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="main-footer">
+		<div class="container">
+			<div class="flex-row justify-content-center row-padding">
+				<div class="d-none d-desk-block col-desk">
+					<ul class="useful-links">
+						<li><strong>شیپور</strong></li>
+						<li><a href="#">درباره شیپور</a></li>
+						<li><a href="#">بلاگ</a></li>
+						<li><a href="#">نقشه سایت</a></li>
+						<li><a href="#">فرصت های شغلی</a></li>
+					</ul>
+				</div>
+				<div class="d-none d-tab-block col-tab">
+					<ul class="useful-links">
+						<li><strong>راهنمای مشتریان</strong></li>
+						<li><a href="#">سوالات متداول</a></li>
+						<li><a href="#">قوانین و مقررات</a></li>
+						<li><a href="#">سیاست حفظ حریم خصوصی</a></li>
+					</ul>
+				</div>
+				<div class="d-none d-tab-block col-tab">
+					<ul class="useful-links">
+						<li><strong>خدمات مشتریان</strong></li>
+						<li><a href="#">ارسال پیشنهادات</a></li>
+						<li><a href="#">پشتیبانی 24 ساعته</a></li>
+						<li><a href="#">قیمت خودرو</a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-tab-auto">
+					<a href="#">
+						<img src="img/samandehi.png" alt="ستاد ساماندهی" class="image-responsive">
+					</a>
+				</div>
+				<div class="col-4 col-tab-auto">
+					<a href="#">
+						<img src="img/enamad.png" alt="اینماد" class="image-responsive">
+					</a>
+				</div>
+				<div class="col-4 col-tab-auto">
+					<a href="#">
+						<img src="img/ecunion.png" alt="اتحادیه" class="image-responsive">
+					</a>
+				</div>
+				<div class="col-auto">
+					<a href="#" class="download-app google-play"></a>
+					<a href="#" class="download-app sib-app"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Footer Nav -->
+	<nav id="footer-nav">
+		<div class="container">
+			<div class="flex-row justify-content-center justify-content-tab-between align-items-center">
+				<div class="col-auto">
+					<p class="designer">طراحی شده بدست علی سلطانی – تابستان 1400</p>
+				</div>
+				<div class="col-12 d-tab-none"></div>
+				<div class="col-auto">
+					<div class="social">
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+</body>
+</html>

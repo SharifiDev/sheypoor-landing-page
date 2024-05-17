@@ -1,0 +1,482 @@
+/* ################ MOBILE ############### */
+
+/* /////////////////////////////////////// */
+/* ///////////// GRID SYSTEM ///////////// */
+/* /////////////////////////////////////// */
+
+* { box-sizing: border-box; }
+
+/* ---> Containers */
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+/* ---> Grid Row */
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.flex-row.row-padding {
+	margin-right: -6px;
+	margin-left: -6px;
+}
+.flex-row.row-padding > *[class*="col"] {
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+/* ---> Grid Columns */
+.col {
+	flex: 1 0 auto;
+}
+.col-auto {
+	flex: 0 0 auto;
+}
+.col-12 {
+	flex: 0 0 100%;
+}
+.col-11 {
+	flex: 0 0 91.666%;
+}
+.col-10 {
+	flex: 0 0 83.333%;
+}
+.col-9 {
+	flex: 0 0 75%;
+}
+.col-8 {
+	flex: 0 0 66.666%;
+}
+.col-7 {
+	flex: 0 0 58.333%;
+}
+.col-6 {
+	flex: 0 0 50%;
+}
+.col-5 {
+	flex: 0 0 41.666%;
+}
+.col-4 {
+	flex: 0 0 33.333%;
+}
+.col-3 {
+	flex: 0 0 25%;
+}
+.col-2 {
+	flex: 0 0 16.666%;
+}
+.col-1 {
+	flex: 0 0 8.333%;
+}
+
+
+
+/* /////////////////////////////////////// */
+/* //////////////// ALIGN //////////////// */
+/* /////////////////////////////////////// */
+
+/* ---> Horizontal Align */
+.justify-content-start {
+	justify-content: flex-start;
+}
+.justify-content-end {
+	justify-content: flex-end;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-around {
+	justify-content: space-around;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+
+/* ---> Vertical Align Items */
+.align-items-start {
+	align-items: flex-start;
+}
+.align-items-end {
+	align-items: flex-end;
+}
+.align-items-stretch {
+	align-items: stretch;
+}
+.align-items-center {
+	align-items: center;
+}
+.align-items-baseline {
+	align-items: baseline;
+}
+
+/* ---> Vertical Align Line*/
+.align-content-start {
+	align-content: flex-start;
+}
+.align-content-end {
+	align-content: flex-end;
+}
+.align-content-stretch {
+	align-content: stretch;
+}
+.align-content-center {
+	align-content: center;
+}
+.align-content-around {
+	align-content: space-around;
+}
+.align-content-between {
+	align-content: space-between;
+}
+
+/* ---> Vertical Align Self */
+.align-self-auto {
+	align-self: auto;
+}
+.align-self-start {
+	align-self: flex-start;
+}
+.align-self-end {
+	align-self: flex-end;
+}
+.align-self-stretch {
+	align-self: stretch;
+}
+.align-self-center {
+	align-self: center;
+}
+.align-self-baseline {
+	align-self: baseline;
+}
+
+
+/* /////////////////////////////////////// */
+/* /////////////// DISPLAY /////////////// */
+/* /////////////////////////////////////// */
+.d-none {
+	display: none;
+}
+.d-inline {
+	display: inline;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.d-block {
+	display: block;
+}
+
+
+
+
+
+
+/* ############# TABLET ############# */
+
+@media (min-width: 768px) {
+	
+	/* /////////////////////////////////////// */
+	/* ///////////// GRID SYSTEM ///////////// */
+	/* /////////////////////////////////////// */
+	
+	.col-tab {
+		flex: 1 0 auto;
+	}
+	.col-tab-auto {
+		flex: 0 0 auto;
+	}
+	.col-tab-12 {
+		flex: 0 0 100%;
+	}
+	.col-tab-11 {
+		flex: 0 0 91.666%;
+	}
+	.col-tab-10 {
+		flex: 0 0 83.333%;
+	}
+	.col-tab-9 {
+		flex: 0 0 74.999%;
+	}
+	.col-tab-8 {
+		flex: 0 0 66.666%;
+	}
+	.col-tab-7 {
+		flex: 0 0 58.333%;
+	}
+	.col-tab-6 {
+		flex: 0 0 50%;
+	}
+	.col-tab-5 {
+		flex: 0 0 41.666%;
+	}
+	.col-tab-4 {
+		flex: 0 0 33.333%;
+	}
+	.col-tab-3 {
+		flex: 0 0 24.999%;
+	}
+	.col-tab-2 {
+		flex: 0 0 16.666%;
+	}
+	.col-tab-1 {
+		flex: 0 0 8.333%;
+	}
+
+
+	/* /////////////////////////////////////// */
+	/* //////////////// ALIGN //////////////// */
+	/* /////////////////////////////////////// */
+
+	/* ---> Horizontal Align */
+	.justify-content-tab-start {
+		justify-content: flex-start;
+	}
+	.justify-content-tab-end {
+		justify-content: flex-end;
+	}
+	.justify-content-tab-center {
+		justify-content: center;
+	}
+	.justify-content-tab-around {
+		justify-content: space-around;
+	}
+	.justify-content-tab-between {
+		justify-content: space-between;
+	}
+
+	/* ---> Vertical Align Items */
+	.align-items-tab-start {
+		align-items: flex-start;
+	}
+	.align-items-tab-end {
+		align-items: flex-end;
+	}
+	.align-items-tab-stretch {
+		align-items: stretch;
+	}
+	.align-items-tab-center {
+		align-items: center;
+	}
+	.align-items-tab-baseline {
+		align-items: baseline;
+	}
+
+	/* ---> Vertical Align Line*/
+	.align-content-tab-start {
+		align-content: flex-start;
+	}
+	.align-content-tab-end {
+		align-content: flex-end;
+	}
+	.align-content-tab-stretch {
+		align-content: stretch;
+	}
+	.align-content-tab-center {
+		align-content: center;
+	}
+	.align-content-tab-around {
+		align-content: space-around;
+	}
+	.align-content-tab-between {
+		align-content: space-between;
+	}
+
+	/* ---> Vertical Align Self */
+	.align-self-tab-auto {
+		align-self: auto;
+	}
+	.align-self-tab-start {
+		align-self: flex-start;
+	}
+	.align-self-tab-end {
+		align-self: flex-end;
+	}
+	.align-self-tab-stretch {
+		align-self: stretch;
+	}
+	.align-self-tab-center {
+		align-self: center;
+	}
+	.align-self-tab-baseline {
+		align-self: baseline;
+	}
+
+
+	/* /////////////////////////////////////// */
+	/* /////////////// DISPLAY /////////////// */
+	/* /////////////////////////////////////// */
+	.d-tab-none {
+		display: none;
+	}
+	.d-tab-inline {
+		display: inline;
+	}
+	.d-tab-inline-block {
+		display: inline-block;
+	}
+	.d-tab-block {
+		display: block;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* ############# DESKTOP ############# */
+
+@media (min-width: 1024px) {
+
+	/* /////////////////////////////////////// */
+	/* ///////////// GRID SYSTEM ///////////// */
+	/* /////////////////////////////////////// */
+	
+	.col-desk {
+		flex: 1 0 auto;
+	}
+	.col-desk-auto {
+		flex: 0 0 auto;
+	}
+	.col-desk-12 {
+		flex: 0 0 100%;
+	}
+	.col-desk-11 {
+		flex: 0 0 91.666%;
+	}
+	.col-desk-10 {
+		flex: 0 0 83.333%;
+	}
+	.col-desk-9 {
+		flex: 0 0 74.999%;
+	}
+	.col-desk-8 {
+		flex: 0 0 66.666%;
+	}
+	.col-desk-7 {
+		flex: 0 0 58.333%;
+	}
+	.col-desk-6 {
+		flex: 0 0 49.999%;
+	}
+	.col-desk-5 {
+		flex: 0 0 41.666%;
+	}
+	.col-desk-4 {
+		flex: 0 0 33.333%;
+	}
+	.col-desk-3 {
+		flex: 0 0 24.999%;
+	}
+	.col-desk-2 {
+		flex: 0 0 16.666%;
+	}
+	.col-desk-1 {
+		flex: 0 0 8.333%;
+	}
+
+	
+	/* /////////////////////////////////////// */
+	/* //////////////// ALIGN //////////////// */
+	/* /////////////////////////////////////// */
+
+	/* ---> Horizontal Align */
+	.justify-content-desk-start {
+		justify-content: flex-start;
+	}
+	.justify-content-desk-end {
+		justify-content: flex-end;
+	}
+	.justify-content-desk-center {
+		justify-content: center;
+	}
+	.justify-content-desk-around {
+		justify-content: space-around;
+	}
+	.justify-content-desk-between {
+		justify-content: space-between;
+	}
+
+	/* ---> Vertical Align Items */
+	.align-items-desk-start {
+		align-items: flex-start;
+	}
+	.align-items-desk-end {
+		align-items: flex-end;
+	}
+	.align-items-desk-stretch {
+		align-items: stretch;
+	}
+	.align-items-desk-center {
+		align-items: center;
+	}
+	.align-items-desk-baseline {
+		align-items: baseline;
+	}
+
+	/* ---> Vertical Align Line*/
+	.align-content-desk-start {
+		align-content: flex-start;
+	}
+	.align-content-desk-end {
+		align-content: flex-end;
+	}
+	.align-content-desk-stretch {
+		align-content: stretch;
+	}
+	.align-content-desk-center {
+		align-content: center;
+	}
+	.align-content-desk-around {
+		align-content: space-around;
+	}
+	.align-content-desk-between {
+		align-content: space-between;
+	}
+
+	/* ---> Vertical Align Self */
+	.align-self-desk-auto {
+		align-self: auto;
+	}
+	.align-self-desk-start {
+		align-self: flex-start;
+	}
+	.align-self-desk-end {
+		align-self: flex-end;
+	}
+	.align-self-desk-stretch {
+		align-self: stretch;
+	}
+	.align-self-desk-center {
+		align-self: center;
+	}
+	.align-self-desk-baseline {
+		align-self: baseline;
+	}
+
+
+	/* /////////////////////////////////////// */
+	/* /////////////// DISPLAY /////////////// */
+	/* /////////////////////////////////////// */
+	.d-desk-none {
+		display: none;
+	}
+	.d-desk-inline {
+		display: inline;
+	}
+	.d-desk-inline-block {
+		display: inline-block;
+	}
+	.d-desk-block {
+		display: block;
+	}
+
+}

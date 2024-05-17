@@ -1,0 +1,286 @@
+/* ############ Base ############ */
+/* ---> Set Vars */
+:root {
+	--color-blue: #0084FF;
+	--color-orange: #fb9517;
+}
+/* ---> Initial Setting For All Element */
+* { font-family: my-shabnam; }
+/* ---> Body Inital style */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	color: #444;
+	background-color: #F9F9F9;
+}
+/* ---> Link Inital style */
+a { text-decoration: none;color: inherit; }
+/* ---> Float Setting */
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/* ---> Image Responsive */
+.image-responsive {
+	max-width: 100%;
+	height: auto;
+}
+/* ---> Box Style */
+.box-style {
+	background: white;
+	box-shadow: 0 0 7px rgba(0,0,0,0.08);
+	border-radius: 5px;
+}
+
+
+/* ################# Top Nav ################# */
+#top-nav { background-color: #eff0f1;border-top: 2px solid var(--color-blue);font-size: 13px;color: #888; }
+/* ---> Menu */
+#top-nav .menu { margin: 0;padding: 0;list-style: none; }
+#top-nav .menu > li { float: right;margin-left: 30px;padding: 4px 0;position: relative; }
+#top-nav .menu > li > a { display: inline-block;padding: 4px 0; }
+#top-nav .menu > li > a:hover { color: var(--color-orange); }
+/* ---> Menu Child */
+#top-nav .account-menu , #top-nav .menu-child {
+	margin: 0;
+	padding: 7px 0;
+	list-style: none;
+	position: absolute;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	display: none;
+}
+#top-nav .account-menu > a ,
+#top-nav .menu-child > li > a { display: block;padding: 7px 25px;white-space: nowrap; }
+#top-nav .account-menu > a:hover ,
+#top-nav .menu-child > li > a:hover { color: var(--color-orange) }
+#top-nav .login:hover > .account-menu,
+#top-nav .menu > li:hover > .menu-child { display: block; }
+/* ---> chat btn */
+#top-nav .chat { display: inline-block;padding: 8px;margin-left: 30px; }
+#top-nav .chat:hover , #top-nav .my-account:hover { color: var(--color-orange); }
+#top-nav .chat i , #top-nav .my-account i { font-size: 18px;vertical-align: middle;margin-right: 5px; }
+/* ---> account btn */
+#top-nav .my-account { display: inline-block;padding-top: 8px;padding-bottom: 4px; }
+/* ---> account menu */
+#top-nav .login { position: relative; }
+#top-nav .account-menu { left: 0; }
+#top-nav .account-menu a:first-child { border-bottom: 1px solid #eee; }
+/* ---> Mobile Menu icon */
+#top-nav .mobile-menu-icon { font-size: 18px;transform: rotateY(180deg);margin-top: 6px; }
+
+
+
+
+/* ################# Mobile Menu ################# */
+#mobile-menu { position: fixed;z-index: 1000;top: 0;bottom: 0;right: 0;left: 0;background: rgba(0,0,0,0.5);display: none; }
+#mobile-menu:target { display: block; }
+#mobile-menu .wrapper { background: white;width: 100%;max-width: 220px;height: 100%;overflow-y: scroll;position: relative; }
+#mobile-menu .menu { margin: 0;padding: 12px;list-style: none; }
+#mobile-menu .menu > li { border-bottom: 1px solid #ddd; }
+#mobile-menu .menu > li > a { display: block;padding: 12px; }
+#mobile-menu .menu-child { list-style: none;padding-right: 30px;padding-bottom: 10px; }
+#mobile-menu .menu-child > li > a { color: #888;font-size: 13px;padding: 5px 0;display: block; }
+#mobile-menu .close-mobile-menu { position: absolute;left: 15px;top: 10px;font-size: 20px; }
+
+
+
+
+/* ################# Header ################# */
+#main-header { background: white;box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+#main-header .logo { padding: 8px 0;display: block;line-height: 0; }
+#main-header .ads-registration {
+	display: inline-block;
+	font-size: 13px;
+	background-color: var(--color-blue);
+	padding: 8px 15px;
+	border-radius: 20px;
+	color: white;
+}
+#main-header .ads-registration i { font-size: 18px;vertical-align: middle;margin-left: 5px; }
+#main-header .ads-registration:hover { box-shadow: 1px 2px 5px rgba(0,0,0,0.4) }
+
+
+
+
+/* ################# Site Name ################# */
+#site-name h1 { font-size: 21px; }
+
+
+
+/* ################# Search ################# */
+#search { margin-top: 50px; }
+#search .form-wrapper { padding: 15px; }
+/* ---> Search Field */
+#search .search-field {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	height: 40px;
+	padding: 0 10px;
+	border-bottom: none;
+	font-size: 15px;
+	outline: none;
+	position: relative;
+	z-index: 2;
+}
+#search .search-field[type="text"] { border-radius: 4px 4px 0 0; }
+/* ---> Search Button */
+#search .search-btn {
+	width: 100%;
+	text-align: center;
+	padding: 0 20px;
+	height: 40px;
+	background: #eff0fa;
+	border: 1px solid #ccc;
+	border-radius: 0 0 4px 4px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	z-index: 1;
+}
+#search .search-btn i { margin-left: 5px;font-size: 18px;vertical-align: middle; }
+#search .search-btn:hover { background: white;box-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+
+
+
+/* ################# Category ################# */
+#category { margin-top: 40px;font-size: 13px; }
+/* ---> Open Category items */
+#category .open-cat-item { padding: 12px;margin-bottom: 12px;height: calc(100% - 12px); }
+#category .open-cat-item header { border-bottom: 1px solid #ddd;padding: 6px 0; }
+#category .open-cat-item i { font-size: 24px;margin-left: 10px; }
+#category .open-cat-item .name { display: block;margin-bottom: 4px; }
+#category .open-cat-item .ads-number { display: block;font-size: 12px;color: #888; }
+#category .open-cat-item .more { color: var(--color-blue); }
+#category .open-cat-item .more:hover { color: var(--color-orange); }
+#category .open-cat-item .entry { padding-top: 10px; }
+#category .open-cat-item .entry a {
+	display: inline-block;
+	color: #888;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 0px 6px;
+	line-height: 1.618;
+	margin: 4px 0;
+}
+#category .open-cat-item .entry a:hover { color: var(--color-orange); }
+/* ---> Close Category items */
+#category .close-cat-item { padding: 10px 0;margin-bottom: 12px; }
+#category .close-cat-item * { display: block;text-align: center; }
+#category .close-cat-item i { font-size: 24px;margin-bottom: 8px; }
+#category .close-cat-item .ads-number { font-size: 12px;color: #888; }
+
+
+
+/* ################# Safe Shopping ################# */
+#safe-shopping { margin-top: 20px; }
+#safe-shopping .wrapper { display: flex;overflow-x: scroll;background-color: #eff0f1;padding-top: 12px; }
+#safe-shopping .custom-col { flex: 0 0 215px;margin: 6px; }
+#safe-shopping .custom-col:first-child { flex: 0 0 190px;padding-bottom: 12px; }
+/* ---> Header */
+#safe-shopping header { text-align: center; }
+#safe-shopping header i { color: var(--color-blue);font-size: 50px; }
+#safe-shopping header h3 { font-size: 20px; }
+#safe-shopping header p { color: #888;line-height: 1.618; }
+#safe-shopping header a {
+	display: inline-block;
+	color: var(--color-blue);
+	font-size: 13px;
+	border: 1px solid var(--color-blue);
+	border-radius: 20px;
+	padding: 0 12px;
+	line-height: 2.6;
+}
+#safe-shopping header a:hover { color: var(--color-orange); }
+/* ---> ADS Item */
+#safe-shopping .ads-item {
+	padding: 15px;
+	height: calc(100% - 12px);
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+}
+#safe-shopping .ads-item img { border-radius: 5px; }
+#safe-shopping .ads-item h5 { font-size: 15px;margin-top: 5px;margin-bottom: 30px; }
+#safe-shopping .ads-item:hover h5 { color: var(--color-orange); }
+#safe-shopping .ads-item .safe-label { margin-top: auto;color: var(--color-blue); }
+#safe-shopping .ads-item .safe-label i { font-size: 18px;vertical-align: middle;margin-left: 4px; }
+#safe-shopping .ads-item .safe-label span { font-size: 13px; }
+#safe-shopping .ads-item .price { margin: 8px 0; }
+#safe-shopping .ads-item .price .amount { font-weight: bold;font-size: 17px; }
+#safe-shopping .ads-item .price .currency { font-size: 13px;color: #aaa; }
+
+
+
+/* ################# Latest ADS ################# */
+#latest-ads h3 { color: #aaa;font-size: 16px; }
+#latest-ads .ads-item {
+	padding: 15px;
+	height: calc(100% - 12px);
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+}
+#latest-ads .ads-item img { border-radius: 5px; }
+#latest-ads .ads-item h5 { font-size: 15px;margin-top: 5px;margin-bottom: 30px; }
+#latest-ads .ads-item:hover h5 { color: var(--color-orange); }
+#latest-ads .ads-item .price { margin-top: auto; }
+#latest-ads .ads-item .price .amount { font-weight: bold;font-size: 17px; }
+#latest-ads .ads-item .price .currency { font-size: 13px;color: #aaa; }
+#latest-ads .ads-item address { font-style: normal;font-size: 12px;color: #999;margin: 5px 0; }
+#latest-ads .more { text-align: center;padding: 20px 0; }
+#latest-ads .more a {
+	display: inline-block;
+	color: var(--color-blue);
+	font-size: 13px;
+	border: 1px solid var(--color-blue);
+	border-radius: 20px;
+	padding: 0 12px;
+	line-height: 2.6;
+}
+#latest-ads .more a:hover { color: var(--color-orange); }
+
+
+/* ################# Footer ################# */
+#main-footer { background: #eff0f1;padding-top: 25px;margin-top: 12px; }
+#main-footer .useful-links { margin: 0;padding: 0;list-style: none;font-size: 13px;margin-bottom: 25px; }
+#main-footer .useful-links strong { margin-bottom: 10px;display: inline-block; }
+#main-footer .useful-links a { line-height: 2;color: #777; }
+#main-footer .useful-links a:hover { color: #444; }
+#main-footer img { display: block;margin: 0 auto; }
+#main-footer .download-app {
+	display: block;
+	width: 160px;
+	height: 46px;
+	background: white;
+	border-radius: 5px;
+	margin-bottom: 8px;
+	background-image: url(../img/app.jpg);
+	background-size: 160px;
+	background-repeat: no-repeat;
+}
+#main-footer .google-play { background-position: 0 -46px;margin-top: 10px; }
+#main-footer .sib-app { background-position: 0 0; }
+
+
+/* ################# Nav Footer ################# */
+#footer-nav { background: #d0d1d3;padding: 5px 0; }
+#footer-nav .designer { font-size: 13px;color: #666; }
+#footer-nav .social a { font-size: 18px;color: #777; }
+#footer-nav .social a:not(:first-child) { margin-right: 10px; }
+#footer-nav .social a:hover { color: #444; }
+
+
+
+/* ################# Tablet Custom Style ################# */
+@media (min-width: 768px) {
+	#search .search-btn { height: 50px;border-radius: 4px 0 0 4px; }
+	#search .search-field { border-left: none;border-bottom: 1px solid #ccc;height: 50px; }
+	#search .search-field[type="text"] { border-radius: 0 4px 4px 0; }
+}

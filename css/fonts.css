@@ -1,0 +1,20 @@
+
+/* ####### Shabnam Font ####### */
+	/* ---> Light */
+	@font-face {
+		font-family: my-shabnam;
+		font-weight: 300;
+		src: url(../fnt/shabnam/Shabnam-Light-FD.woff2), url(../fnt/shabnam/Shabnam-Light-FD.woff);
+	}
+	/* ---> Normal */
+	@font-face {
+		font-family: my-shabnam;
+		font-weight: normal;
+		src: url(../fnt/shabnam/Shabnam-FD.woff2), url(../fnt/shabnam/Shabnam-FD.woff);
+	}
+	/* ---> Bold */
+	@font-face {
+		font-family: my-shabnam;
+		font-weight: bold;
+		src: url(../fnt/shabnam/Shabnam-Bold-FD.woff2), url(../fnt/shabnam/Shabnam-Bold-FD.woff);
+	}
